@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon23.png" type="image/x-icon">
+    <link rel="stylesheet" href="myStyle.css" />
+    <title>Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container1">
+      <div class="heading">
+        <h1>Temperature</h1>
+        <h1 style="padding-left: 25px">Converter</h1>
+        <div class="result">
+          <span class="result-heading" style="padding-left: 40px"
+            >Result (Celsius)</span
+          >
+          <h2 class="celsius-value" id="celsius"></h2>
+        </div>
+      </div>
+      <div class="temperature-select">
+        <div class="degree-field">
+          <label for="degree"><p>Degrees</p></label>
+          <input
+            type="number"
+            name="degree"
+            id="degree"
+            placeholder="Enter the value"
+          />
+        </div>
+        <div>
+          <label for="temp-type"></label>
+          <select name="temp-type" id="temp-type" autocomplete="on">
+            <option selected disabled>
+              Select Your Desire Temperature Unit
+            </option>
+            <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+            <option id="kelvin" value="kelvin">Kelvin</option>
+          </select>
+        </div>
+      </div>
+
+      <img src="temperature-icon-png-11088.png" alt="" />
+
+      <button id="convert-btn">Calculate</button>
+    </div>
+    <script src="myScript.js"></script>
+  </body>
+</html>
